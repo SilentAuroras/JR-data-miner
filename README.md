@@ -1,2 +1,3 @@
-# JR-data-miner
+# JR Data Miner
+
 JR train analysis
