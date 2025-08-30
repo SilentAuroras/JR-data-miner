@@ -1,14 +1,32 @@
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
+# Airflow and Spark logs
+logs/
+*.log
 
-# Virtual environments
-.venv/
-.env/
+# Data & output
+*.cache.*
+*.csv
+*.parquet
 
 # Distribution / packaging
+*.egg-info/
 build/
 dist/
-*.egg-info/
+
+# Docker images
+*.tar
+
+# Ignore Airflow plugins cache
+extract/airflow/plugins/__pycache__/
 
 # Jetbrains
 .idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Kubernetes config / secrets
+secrets.yaml
+
+# Virtual environments
+.env/
+.venv/
