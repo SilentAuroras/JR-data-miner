@@ -15,6 +15,10 @@ dist/
 # Docker images
 *.tar
 
+# Python bytecode
+__pycache__/
+*.pyc
+
 # Ignore Airflow plugins cache
 extract/airflow/plugins/__pycache__/
 

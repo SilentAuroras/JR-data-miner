@@ -7,7 +7,14 @@ The following data sources are integrated into the pipeline:
 -   Station data (TODO)
 -   Train information (TODO)
 -   Earthquake data (TODO)
--   Weather data (TODO)
+-   Weather data:
+    - API: https://open-meteo.com/en/docs/jma-api
+    - Requested data
+      - Temperature
+      - Day or night
+      - Precipitation
+      - Wind speed
+      - Wind direction
 
 Software Stack Overview:
 
