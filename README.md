@@ -8,3 +8,10 @@ The following data sources are integrated into the pipeline:
 -   Train information (TODO)
 -   Earthquake data (TODO)
 -   Weather data (TODO)
+
+Software Stack Overview:
+
+-   Infrastructure: (TODO)
+-   Data Processing: (TODO)
+-   Storage: (TODO)
+-   Frontend: (TODO)
