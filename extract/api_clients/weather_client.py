@@ -13,8 +13,9 @@ def get_weather_forcast(coordinates):
     """
     Fetch weather for a given latitude and longitude using the JMA API
     Args:
-        :param coordinates - Tuple of (latitude,longitude)
-            Example: [(latitude, longitude), (latitude, longitude)]
+        :param:
+            coordinates - Tuple of (latitude, longitude)
+                Example: [(latitude, longitude), (latitude, longitude)]
         :return: random_uuid
     """
 
@@ -26,7 +27,7 @@ def get_weather_forcast(coordinates):
     # Setup dataframe for all weather forcast requested, includes multiple lat/long locations
     df = pd.DataFrame()
 
-    # Loop through list of coordinates
+    # Loop through a list of coordinates
     for latitude, longitude in coordinates:
 
         # Set up the URL and parameters
@@ -61,7 +62,7 @@ def get_weather_forcast(coordinates):
             'timestamp': pd.to_datetime('now')                      # Timestamp for the data
         }
 
-        # Convert the data to a pandas frame
+        # Convert the data to a panda frame
         new_data = pd.DataFrame(weather_data, index=[0])
 
         # Append to the existing dataframe
@@ -71,7 +72,7 @@ def get_weather_forcast(coordinates):
     # Generate random UUID for parquet storage
     random_uuid = uuid.uuid4()
 
-    # Create parquet file locally
+    # Create a parquet file locally
     filename = f"weather_{random_uuid}.parquet"
     df.to_parquet(filename)
 
