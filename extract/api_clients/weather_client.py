@@ -11,12 +11,14 @@ from retry_requests import retry
 
 def get_weather_forcast(coordinates):
     """
-    Fetch weather for a given latitude and longitude using the JMA API
+    Fetch weather data for given latitude and longitude coordinates using the JMA API.
+
     Args:
-        :param:
-            coordinates - Tuple of (latitude, longitude)
-                Example: [(latitude, longitude), (latitude, longitude)]
-        :return: random_uuid
+        coordinates (list of tuple): A list of (latitude, longitude) pairs
+            Example: [(latitude, longitude), (latitude, longitude)]
+
+    Return:
+        random_uuid: A randomly generated UUID for the saved parquet file
     """
 
     # Set up the Open-Meteo API client
