@@ -4,7 +4,12 @@ This repository creates a local data pipeline architecture for analyzing JR (Jap
 
 The following data sources are integrated into the pipeline:
 
--   Station data (TODO)
+-   Station data:
+    - API: http://overpass-api.de/
+    - Requested data
+      - Station name
+      - Latitude
+      - Longitude
 -   Train information (TODO)
 -   Earthquake data (TODO)
 -   Weather data:
