@@ -1,25 +1,28 @@
 # JR Data Miner
 
-This repository creates a local data pipeline architecture for analyzing JR (Japan Railways Group) train data using a local Kubernetes deployment. This setup helps perform analysis of JR train operations, schedules, delays by reviewing factors such as weather or earthquakes.
+This repository creates a data pipeline architecture for analyzing JR (Japan Railways Group) train data using AWS. This setup helps perform analysis of JR train operations, schedules, delays by reviewing factors such as weather or earthquakes.
 
 The following data sources are integrated into the pipeline:
 
 -   Station data:
-    - API: http://overpass-api.de/
-    - Requested data
-      - Station name
-      - Latitude
-      - Longitude
+    -   API: http://overpass-api.de/
+    -   Requested data
+        -   Station name
+        -   Latitude
+        -   Longitude
 -   Train information (TODO)
--   Earthquake data (TODO)
+-   Earthquake data
+    -   API: https://www.jma.go.jp/bosai/quake/data/list.json
+    -   Requested data
+        -   (TODO)
 -   Weather data:
-    - API: https://open-meteo.com/en/docs/jma-api
-    - Requested data
-      - Temperature
-      - Day or night
-      - Precipitation
-      - Wind speed
-      - Wind direction
+    -   API: https://open-meteo.com/en/docs/jma-api
+    -   Requested data
+        -   Temperature
+        -   Day or night
+        -   Precipitation
+        -   Wind speed
+        -   Wind direction
 
 Software Stack Overview:
 

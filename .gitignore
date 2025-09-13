@@ -1,7 +1,3 @@
-# Airflow and Spark logs
-logs/
-*.log
-
 # Data & output
 *.cache.*
 *.csv
@@ -12,25 +8,29 @@ logs/
 build/
 dist/
 
-# Docker images
-*.tar
-
 # Python bytecode
 __pycache__/
 *.pyc
 
-# Ignore Airflow plugins cache
-extract/airflow/plugins/__pycache__/
-
-# Jetbrains
-.idea/
-
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
-
-# Kubernetes config / secrets
-secrets.yaml
+# Mac
+.DS_Store
 
 # Virtual environments
 .env/
 .venv/
+
+# Terraform state
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Terraform variables
+*.tfvars
+*.tfvars.json
+
+# Terraform plan output
+*.tfplan
+
+# Local .terraform directories
+.terraform/
+.terraform.lock.hcl
