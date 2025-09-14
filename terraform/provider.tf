@@ -14,7 +14,6 @@ variable "region" {
 }
 
 // Setup AWS Provider and variables
-// Using AWS CLI for authentication
 provider "aws" {
   region = var.region
 }
