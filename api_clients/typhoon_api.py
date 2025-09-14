@@ -1,1 +1,0 @@
-# Typhoons API Client Calls
