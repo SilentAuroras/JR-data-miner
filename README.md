@@ -1,6 +1,6 @@
 # JR Data Miner
 
-This repository creates a data pipeline architecture for analyzing JR (Japan Railways Group) train data using AWS. This setup helps perform analysis of JR train operations, schedules, delays by reviewing factors such as weather or earthquakes.
+This repository creates a data pipeline architecture for analyzing JR (Japan Railways Group) train data using AWS or GCP. This setup helps perform analysis of JR train operations, schedules, delays by reviewing factors such as weather or earthquakes.
 
 The following data sources are integrated into the pipeline:
 
