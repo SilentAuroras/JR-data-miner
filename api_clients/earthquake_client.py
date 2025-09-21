@@ -52,11 +52,10 @@ def get_earthquake_events():
         # Generate random UUID for parquet storage
         random_uuid = uuid.uuid4()
 
-        # Drop the column - ["Head.Headline.Information"]
-        # Column not needed and causing parquet creation issues
-        print(df_detailed_events.columns.tolist())
-        if "Head.Headline.Information.Item" in df_detailed_events.columns:
-            df_detailed_events = df_detailed_events.drop(["Head.Headline.Information.Item"], axis=1)
+        # Drop problematic columns before saving to parquet - serialization issue
+        for col in ["Head.Headline.Information", "Head.Headline.Information.Item"]:
+            if col in df_detailed_events.columns:
+                df_detailed_events = df_detailed_events.drop([col], axis=1)
 
         # Create a parquet file locally
         filename = f"quake_{random_uuid}.parquet"
