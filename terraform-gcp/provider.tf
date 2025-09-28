@@ -1,9 +1,9 @@
 // Provider declaration
 terraform {
   required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 6.0"
+    google = {
+      source  = "hashicorp/google"
+      version = "6.38.0"
     }
   }
 }
@@ -23,7 +23,7 @@ variable "home-ip" {
   type = string
 }
 
-// Setup AWS Provider
-provider "aws" {
+// Setup GCP provider
+provider "google" {
   region = var.region
 }
